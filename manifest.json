@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "BI-DEC",
+  "version": "1.0",
+  "icons": {
+    "16": "img/logo.png",
+    "32": "img/logo.png",
+    "48": "img/logo.png",
+    "128": "img/logo.png"
+  },
+ 
+  "action": {
+    "default_popup": "Calc.html"
+  }
+}
