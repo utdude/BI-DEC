@@ -98,7 +98,7 @@ $(document).ready(function()
     
     $("#hdtod_convert").click(function()
     {        
-        var val = parseInt(document.getElementById("hdtod_val").value);
+        var val =document.getElementById("hdtod_val").value;
         let res = hdtod(val);
         $("#hdtod_res").css("display","block");
         $("#hdtod_res").html("The Decimal for "+val+" is : "+res);
