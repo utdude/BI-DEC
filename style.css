@@ -78,3 +78,10 @@ span{
     display: none;
     margin-top:20px;
 }
+
+.overlay{
+    width:400px;
+    height:400px;
+    background-color: #051e63;
+    position: fixed;
+}
