@@ -5,6 +5,9 @@
 body{
     width:400px;
 }
+body button{
+    margin-left: 3px;
+}
 .header{
     width:100%;
     background:#eee;
