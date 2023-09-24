@@ -1,2 +1,2 @@
-THIS IS A CONVERTER FOR NUMBERS<br><br>
-to convert numbers to diffrent codes
+THIS IS A CONVERTER FOR NUMBER SYSTEM<br>
+to convert numbers to different codes
