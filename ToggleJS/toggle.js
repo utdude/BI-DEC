@@ -1,7 +1,9 @@
 $("#dtob_toggle").click(function(){
-    if($(".dtob").toggle()){
+    if($(".dtob").toggle())
+    {
         $(".btod").hide();
         $(".dtohd").hide();
+        $(".hdtod").hide();
     }
     
 });
@@ -34,4 +36,27 @@ $("#hdtod_toggle").click(function()
             $(".btod").hide();
             $(".dtohd").hide();
         }
+});
+$("#CharToAscii_toggle").click(function()
+{
+    if($(".CharToAscii").toggle())
+            $(".AsciiToChar").hide();
+});
+
+$("#AsciiToChar_toggle").click(function()
+{
+    if($(".AsciiToChar").toggle())
+            $(".CharToAscii").hide();
+});
+
+$("#nmbr_system").click(function()
+{
+    if($(".number_system").toggle())
+            $(".Ascii").hide();
+});
+
+$("#ascii").click(function()
+{
+    if($(".Ascii").toggle())
+            $(".number_system").hide();
 });

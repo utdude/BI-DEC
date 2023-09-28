@@ -36,9 +36,8 @@ body button{
 }
 .container{
     padding:10px;
-    background-color: #eee;
     margin:20px;
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     justify-content: center;
 }

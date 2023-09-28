@@ -16,47 +16,65 @@
             <img src="img/logo.png" alt="">
             <h1>Universal Converter</h1>
         </div>
-        <p>Number System operations | ASCII operations || Baaki aane waala h </p>
+        <button><p id="nmbr_system">Number System Operations</p></button>
+        <p id="part">|</p>
+        <button><p id="ascii">ASCII Operations</p></button>
+        <!-- <p id="nmbr_system">Number System operations</p> -->
     </div>
-    <div style="width:90%; padding:10px; display:flex; justify-content:space-around;">
-        <button class="toggle" id="dtob_toggle">Decimal to Binary</button>
-        <button class="toggle" id="btod_toggle">Binary to Decimal</button>
-        <button class="toggle" id="dtohd_toggle">Decimal to Hexadecimal</button>
-        <button class="toggle" id="hdtod_toggle">HexaDecimal to Decimal</button>
-        <!-- <label for="dog-names">Choose a Converter:</label> 
-    <select name="dog-names" id="dog-names"> 
-        <option value="rigatoni">Number System</option> 
-        <option value="dave">ASCII</option> 
-        <option value="pumpernickel">Currency</option> 
-        <option value="reeses">Units</option> 
-    </select> -->
-  
+    
 
+    <!-- NUMBER SYSTEM OPERATIONS -->
+
+    <div class="container number_system">
+        <div style="width:100%; padding:10px; display:flex; justify-content:space-around;">
+            <button class="toggle" id="dtob_toggle">Decimal to Binary</button>
+            <button class="toggle" id="btod_toggle">Binary to Decimal</button>
+            <button class="toggle" id="dtohd_toggle">Decimal to Hexadecimal</button>
+            <button class="toggle" id="hdtod_toggle">HexaDecimal to Decimal</button>
+        </div>
+        <div class="container btod">
+            <input type="text" id="btod_val" placeholder="Binary to Decimal" required><br>
+            <button id="btod_convert">Convert</button>
+            <span id="btod_res"></span>
+        </div>
+        <div class="container dtob">
+            <input type="text" id="dtob_val" placeholder="Decimal to Binary" required><br>
+            <button id="dtob_convert">Convert</button>
+            <span id="dtob_res"></span>
+        </div>
+        <div class="container dtohd">
+            <input type="text" id="dtohd_val" placeholder="Decimal to HexaDecimal" required><br>
+            <button id="dtohd_convert">Convert</button>
+            <span id="dtohd_res"></span>
+        </div>
+        <div class="container hdtod">
+            <input type="text" id="hdtod_val" placeholder="Hexadecimal to Decimal" required><br>
+            <button id="hdtod_convert">Convert</button>
+            <span id="hdtod_res"></span>
+        </div>
     </div>
-    <div class="container btod">
-        <input type="text" id="btod_val" placeholder="Binary to Decimal" required><br>
-        <button id="btod_convert">Convert</button>
-        <span id="btod_res"></span>
+
+    <!-- ASCII CONVERSIONS -->
+
+    <div class="container Ascii">
+        <div style="width:90%; padding:10px; display:flex; justify-content:space-around;">
+            <button class="toggle" id="CharToAscii_toggle">Character to ASCII</button>
+            <button class="toggle" id="AsciiToChar_toggle">ASCII to Character</button>
+        </div>
+        <div class="container CharToAscii">
+            <input type="text" id="CharToASCII" placeholder="Insert Character to get ASCII Value" required><br>
+            <button id="CharAscii_Convert">Convert</button>
+        </div>
+        <div class="container AsciiToChar">
+            <input type="text" id="ASCIIToChar" placeholder="Insert ASCII Value to get Character" required><br>
+            <button id="AsciiChar_Convert">Convert</button>
+        </div>
     </div>
-    <div class="container dtob">
-        <input type="text" id="dtob_val" placeholder="Decimal to Binary" required><br>
-        <button id="dtob_convert">Convert</button>
-        <span id="dtob_res"></span>
-    </div>
-    <div class="container dtohd">
-        <input type="text" id="dtohd_val" placeholder="Decimal to HexaDecimal" required><br>
-        <button id="dtohd_convert">Convert</button>
-        <span id="dtohd_res"></span>
-    </div>
-    <div class="container hdtod">
-        <input type="text" id="hdtod_val" placeholder="Hexadecimal to Decimal" required><br>
-        <button id="hdtod_convert">Convert</button>
-        <span id="hdtod_res"></span>
-    </div>
+    
+
     <script src="main.js"></script>
     <script src="./ToggleJS/toggle.js"></script>
     <script src="./ConverterJS/converter.js"></script>
     <script src="./TriggerJS/trigger.js"></script>
 </body>
-
 </html>
